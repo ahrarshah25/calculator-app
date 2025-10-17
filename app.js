@@ -27,7 +27,6 @@ function result(){
         return
     }else if(opt.includes(text[1]) || opt.includes(text[text.length -1])){
         display.value = "Error";
-        display.value = ""
         return       
     }
     var errorFound = false;
