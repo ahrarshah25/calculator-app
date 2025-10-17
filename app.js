@@ -25,7 +25,7 @@ function result(){
         display.value = "";
         alert("Please add an number and operator")
         return
-    }else if(opt.includes(text[1]) || opt.includes(text[text.length -1])){
+    }else if(opt.includes(text[0]) || opt.includes(text[text.length -1])){
         display.value = "Error";
         return       
     }
