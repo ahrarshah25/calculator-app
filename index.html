@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+      <div class="display">
+        <div class="input">
+            <input type="text" disabled name="inputSec" id="display">
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <button class="operator"onclick="clearScreen()">C</button>
+          <button class="operator"onclick="delChar()">Del</button>
+          <button class="operator"onclick="setNumber('%')">%</button>
+          <button class="operator"onclick="setNumber('/')">÷</button>
+        </div>
+        <div class="row">
+          <button class="number"onclick="setNumber('7')">7</button>
+          <button class="number"onclick="setNumber('8')">8</button>
+          <button class="number"onclick="setNumber('9')">9</button>
+          <button class="operator" onclick="setNumber('*')">x</button>
+        </div>
+        <div class="row">
+          <button class="number"onclick="setNumber('4')">4</button>
+          <button class="number"onclick="setNumber('5')">5</button>
+          <button class="number"onclick="setNumber('6')">6</button>
+          <button class="operator"onclick="setNumber('-')">-</button>
+        </div>
+        <div class="row">
+          <button class="number"onclick="setNumber('1')">1</button>
+          <button class="number"onclick="setNumber('2')">2</button>
+          <button class="number"onclick="setNumber('3')">3</button>
+          <button class="operator" onclick="setNumber('+')">+</button>
+        </div>
+        <div class="row1">
+          <button class="number zero"onclick="setNumber('0')">0</button>
+          <button class="number edit1"onclick="setNumber('.')">.</button>
+          <button class="operator"onclick="result()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+<script src="app.js"></script>
+</html>
